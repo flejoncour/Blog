@@ -1,0 +1,27 @@
+<div class="aside">
+	<a href="https://www.instagram.com/yet_another_art_blog/" /><img class="instagram" src="images/instagram.png" /></a>
+	<a href="https://www.facebook.com/Milena-Estrada-224856818266246/" /><img class="facebook" src="images/facebook.jpg" /></a>
+	
+	<?php
+		if(isset($_SESSION['admin']) && $_SESSION['admin']){
+			echo '<a class="inscriptAuteur" href="index.php?action=inscriptionAuteur">Inscrire un nouvel auteur</a>';
+			echo '<a class="gererAuteur" href="index.php?action=gererAuteur">Gérer les auteurs</a>';
+		}	
+	?>
+	<?php
+		if(isset($_SESSION['auteur']) && $_SESSION['auteur']){
+			echo '<a class="creerArticle" href="index.php?action=creerArticle">Écrire un article</a>';
+			echo '<a class="gererArticle" href="index.php?action=gererArticle">Gérer mes articles</a>';
+		}
+	?>
+	
+	<a class="inscriptAbo" href="index.php?action=inscriptionAbonne">S'INSCRIRE</a>	
+	<a class="contact" href="index.php?action=contact">CONTACT</a>	
+	<p class="rechercher">RECHERCHER SUR LE SITE : </p>
+	<div class="barreRecherche">
+	<form>
+		<input type="text" onkeyup="rechercheArticle(this.value)">
+		<div id="recherche"></div>
+	</form>
+	</div>
+</div>

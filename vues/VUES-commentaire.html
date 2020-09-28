@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>commentaires</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+	<div class="commentaire">
+		<h1>Commentaires :</h1>
+		<?php
+			for($j=0; $j<sizeof($tabComm);$j++){
+				echo '<p class="auteur">par '.$tabComm[$j]->auteur.', le '.$tabComm[$j]->date.' : </p><p class="comm">'.$tabComm[$j]->contenu.'</p>';
+			}
+		?>
+	</div>	
+</body>
+</html>

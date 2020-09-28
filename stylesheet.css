@@ -1,0 +1,277 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+    margin:0;
+    padding:0;
+}
+
+/* HEADER : */
+div.header{
+	position : relative;
+
+}
+img.banniere{
+	position : relative ;
+	left: 0;
+	right : 0;
+	top:0;
+	width : 100%;
+}
+#rectangleBanniere{
+	position : absolute;
+	left: 0;
+	right : 0;
+	top:0;
+    width:100%;
+    height:45px;
+    background:black;
+    opacity: 0.5;
+}
+a.nomBlog{
+	position : absolute;
+	left: 5px;
+	top: 5px;
+	font-family : Noto Serif, times new roman;
+	font-weight : bold;
+	font-size: 24px;
+	color : white;
+	text-decoration: none;
+	text-shadow: 0 0 2px #000000;
+}
+a.connexion{
+	position : absolute;
+	left : 90%;
+	top : 5px;
+	font-family : Noto Serif, times new roman;
+	font-size: 24px;
+	color : white;
+	text-decoration: none;
+	text-shadow: 0 0 2px #000000;
+}
+a.aPropos{
+	position : absolute;
+	left : 81%;
+	top : 5px;
+	font-family : Noto Serif, times new roman;
+	font-size: 24px;
+	color : white;
+	text-decoration: none;
+	text-shadow: 0 0 2px #000000;
+}
+@media only screen and (max-width: 1100px){
+	a.connexion{
+		position : absolute;
+		left : 87.2%;
+		top : 5px;
+		font-family : Noto Serif, times new roman;
+		font-size: 17px;
+		color : white;
+		text-decoration: none;
+		text-shadow: 0 0 2px #000000;
+	}
+	a.aPropos{
+		position : absolute;
+		left : 89%;
+		top : 25px;
+		font-family : Noto Serif;
+		font-size: 17px;
+		color : white;
+		text-decoration: none;
+		text-shadow: 0 0 2px #000000;
+	}
+}
+
+/*ASIDE : */
+
+div.aside{
+	position : relative;
+	float : right;
+	text-align: center;
+	width: 20%;
+	left : 0;
+	height : 600px;
+	background-color : Aqua;
+}
+img.facebook{
+	position : absolute;
+	top:5px;
+	right:40px;
+	height: auto; 
+    width: auto; 
+    max-width: 30px; 
+    max-height: 30px;
+    float: left;
+}
+img.instagram{
+	position : absolute;
+	right:5px;
+	top:5px;
+    height: auto; 
+    width: auto; 
+    max-width: 30px; 
+    max-height: 30px;
+}
+a.inscriptAuteur{
+	font-family: Noto Serif, times new roman;
+	position : absolute;
+	top:60px;
+	left:5px;
+	color : black;
+	text-decoration: none;
+}
+a.gererAuteur{
+	font-family: Noto Serif, times new roman;
+	position : absolute;
+	top:80px;
+	left:5px;
+	color : black;
+	text-decoration: none;
+}
+a.creerArticle{
+	font-family: Noto Serif, times new roman;
+	position : absolute;
+	top:100px;
+	left:5px;
+	color : black;
+	text-decoration: none;
+}
+a.gererArticle{
+	font-family: Noto Serif, times new roman;
+	position : absolute;
+	top:120px;
+	left:5px;
+	color : black;
+	text-decoration: none;
+}
+a.inscriptAbo{
+	font-family: Noto Serif, times new roman;
+	position : absolute;
+	top:140px;
+	left:5px;
+	color : black;
+	text-decoration: none;
+}
+a.contact{
+	font-family: Noto Serif, times new roman;
+	position : absolute;
+	top:160px;
+	left:5px;
+	color : black;
+	text-decoration: none;
+}
+p.rechercher{
+	font-family: Noto Serif, times new roman;
+	position : absolute;
+	top:180px;
+	left:5px;
+	color : black;
+	text-decoration: none;
+}
+div.barreRecherche{
+	position : absolute;
+	text-align: left;
+	top:200px;
+	left:5px;
+}
+
+/*ACCUEIL : */
+div.presentation{
+	position : relative;
+	float : left; 
+	margin-left: 3%;
+	margin-top: 1%;
+	text-align: center;
+	left : 3%;
+	width: 20%;
+	height : 170px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	background-color : DarkTurquoise;
+}
+span.cliquable{
+  position:absolute; 
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+  z-index: 1;
+  background-image: url('empty.gif');
+}
+
+/*ARTICLES : */
+
+h1{
+	font-size : 40px;
+	font-weight: bold;
+	font-family: Noto, times new roman;
+}
+h2{
+	font-size : 20px;
+	font-weight: none;
+	font-style: italic;
+	font-family: Noto, times new roman;
+}
+
+div.article{
+	text-align: justify;
+	line-height: 1.6;
+	margin-top : 5%;
+	margin-left : 5%;
+	margin-right : 25%;
+	position : relative;
+	padding : 0; 
+}
+img.image{
+	display: block;
+	width:75%;  
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+textarea {
+  width: 80%;
+  height: 300px;
+}
+
+/*COMMENTAIRES : */
+
+div.commentaire{
+	margin-top : 5%;
+	margin-left : 5%;
+	margin-right : 25%;
+	position : relative;
+	padding : 0; 
+	border:1px solid black
+}
+div.laisserCommentaire{
+	margin-top : 5px;
+	margin-left : 5%;
+	margin-right : 25%;
+	position : relative;
+	padding : 0; 
+	border:1px solid black
+}
+p.auteur{
+	text-align: justify;
+	margin-left : 5%;
+	margin-right : 25%;
+	margin-top: 10px;
+}
+p.comm{
+	text-align: justify;
+	margin-left : 7%;
+	margin-right : 25%;
+	margin-top: 7px;
+}
+
+/*FOOTER : */
+div.footer{
+	position: fixed;
+	padding-bottom : 0;
+  	left: 0;
+  	bottom: 0;
+  	width: 100%;
+  	background-color: lightblue;
+  	color: black;
+  	text-align: center;
+  	clear : both;
+}

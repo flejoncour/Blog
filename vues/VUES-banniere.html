@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>
+			<?php 
+				if(isset($vue['titre'])){
+					echo $vue['titre'];
+				} else{
+					echo "Yet Another Art Blog";
+			}
+			?>
+		</title>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+		<script type="text/javascript">
+			function rechercheArticle(mot){
+				if (mot.length==0) {
+	    			document.getElementById("recherche").innerHTML="";
+	    			document.getElementById("recherche").style.border="0px";
+	    			return;
+	  			}			
+				var req = new XMLHttpRequest();
+				req.onreadystatechange = function(){
+					if(req.readyState==4 && req.status == 200){
+						document.getElementById("recherche").innerHTML=this.responseText;
+
+					}
+				};
+				req.open('GET', "vues/recherche.php?mot="+mot, true);
+				req.responseType = "text";
+				req.send();
+			}
+		</script>
+	</head>
+	<body>
+		<div class="header">
+			<img src="images/banniere.jpg" class="banniere" />
+			<div id="rectangleBanniere"></div>
+			<a class="nomBlog" href="index.php">Yet Another Another Art Blog</a>
+			<a class="aPropos" href="index.php?action=lireArticle&idArticle=1">À propos</a>
+			<?php 
+				if(isset($_SESSION['utilisateur'])){
+					echo '<a class="connexion" href="index.php?action=deconnexion">';
+					echo $_SESSION['login'];
+					echo "<span style=\"font-size:9px\">(deconnexion)</span>";
+				} else{
+					echo '<a class="connexion" href="index.php?action=connexion">';
+					echo "Connexion";
+				}
+			?>
+
+			</a>
+		</div>
