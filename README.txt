@@ -1,3 +1,5 @@
+Programmation d'un blog en PHP via VMC.
+
 Afin de faire fonctionner correctement le site veuillez : 
 	
 	1/ Entrez vos identifiants dans la classe Connexion, qui permet d'ouvrir une connexion entre le serveur et la base de données : 
