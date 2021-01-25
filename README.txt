@@ -1,4 +1,4 @@
-Programmation d'un blog en PHP via VMC.
+Développement from scratch d'un blog en PHP/HTML/CSS/MySQL/S.Apache via les patterns MVC et DAO.
 
 Afin de faire fonctionner correctement le site veuillez : 
 	
